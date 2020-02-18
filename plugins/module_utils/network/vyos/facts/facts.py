@@ -27,6 +27,9 @@ from ansible_collections.vyos.vyos.plugins.module_utils.network.vyos.facts.lldp_
 from ansible_collections.vyos.vyos.plugins.module_utils.network.vyos.facts.lldp_interfaces.lldp_interfaces import (
     Lldp_interfacesFacts,
 )
+from ansible_collections.vyos.vyos.plugins.module_utils.network.vyos.facts.firewall_rules.firewall_rules import (
+    Firewall_rulesFacts,
+)
 from ansible_collections.vyos.vyos.plugins.module_utils.network.vyos.facts.legacy.base import (
     Default,
     Neighbors,
@@ -41,6 +44,7 @@ FACT_RESOURCE_SUBSETS = dict(
     lag_interfaces=Lag_interfacesFacts,
     lldp_global=Lldp_globalFacts,
     lldp_interfaces=Lldp_interfacesFacts,
+    firewall_rules=Firewall_rulesFacts,
 )
 
 
